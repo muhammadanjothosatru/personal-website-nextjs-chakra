@@ -7,6 +7,7 @@ import {
   Stack,
   Button,
 } from '@chakra-ui/react'
+import { saveAs } from "file-saver";
 
 import Container from '../components/Container'
 
@@ -16,10 +17,15 @@ export default function Index() {
     light: 'gray.700',
     dark: 'gray.400'
   }
+  const saveFile = () => {
+    saveAs(
+      "https://drive.google.com/file/d/1TihnMT0tmJcVRd20Klfn-o8Khfb3Sagv/view?usp=share_link"
+    );
+  };
   return (
     <Container>
       <Head>
-        <title>Home - Benjamin Carlson</title>
+        <title>Home - Muhammad Anjotho Satru</title>
       </Head>
       <Stack
         as="main"
@@ -36,9 +42,10 @@ export default function Index() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={2}>Hi, I'm Benjamin Carlson</Heading>
-          <Text color={colorSecondary[colorMode]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante nunc, finibus sit amet purus quis, congue vulputate ipsum. Phasellus lobortis bibendum orci, quis imperdiet lectus imperdiet porttitor.</Text>
-          <Button data-splitbee-event="Button Click" data-splitbee-event-type="Resume">View Resume</Button>
+          <Heading mb={2}>Hi, I'm Muhammad Anjotho Satru</Heading>
+          <Text color={colorSecondary[colorMode]}>Freshgraduate from Computer Engineering student at Institut Teknologi Sepuluh Nopember. I have passion in technology. Especially in Web Development, Cloud Computing, and Network</Text>
+          <br></br>
+          <Button data-splitbee-event="Button Click" data-splitbee-event-type="Resume" onClick={saveFile}>View Resume</Button>
         </Flex>
       </Stack>
     </Container>

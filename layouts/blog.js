@@ -24,7 +24,7 @@ export default function BlogLayout({ children, frontMatter }) {
     return (
         <Container>
             <Head>
-                <title>${slug} - Blog - Benjamin Carlson</title>
+                <title>${slug} - Blog - Muhammad Anjotho Satru</title>
             </Head>
             <Stack
                 as="article"
@@ -57,7 +57,7 @@ export default function BlogLayout({ children, frontMatter }) {
                         <Flex align="center">
                             <Avatar
                                 size="xs"
-                                name="Benjamin Carlson"
+                                name="Muhammad Anjotho Satru"
                                 src="../images/portrait.jpeg"
                                 mr={2}
                             />
