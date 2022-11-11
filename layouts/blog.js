@@ -63,7 +63,7 @@ export default function BlogLayout({ children, frontMatter }) {
                             />
                             <Text fontSize="sm" color={textColor[colorMode]}>
                                 {frontMatter.by}
-                                {'Benjamin Carlson / '}
+                                {'Muhammad Anjotho Satru / '}
                                 {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
                             </Text>
                         </Flex>
